@@ -13,7 +13,7 @@
 ```
 python src/2nd_level/train.py
 ```
-Make sure you've set all paths right in `2nd_level/config.py`.
+Make sure you've set all paths right in `2nd_level/config.py` w.r.t. the `2nd_level` directory.
 
 5. Predict on the test set using the 2nd level model.
 ```
