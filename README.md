@@ -10,4 +10,12 @@
 2. Train 1st level models.
 3. Run inference of 1st level models on the test set.
 4. Train 2nd level model on the predicts of the 1st level models on the test set.
+```
+python src/2nd_level/train.py
+```
+Make sure you've set all paths right in `2nd_level/config.py`.
+
 5. Predict on the test set using the 2nd level model.
+```
+python src/2nd_level/infer.py
+```
