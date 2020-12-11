@@ -3,7 +3,7 @@ This model is based on [Set Transformer](https://arxiv.org/abs/1810.00825)
 
 ## Usage
 ### 1. Define data paths
-Change first level predictions, sample submission, model and final submission paths in the `config.py` file if needed (although the default config should work as well). First level predictions must be in `.npz` format.
+Change first level predictions, sample submission, model and final submission paths in the [config.py](config.py) file if needed (although, the default config should work as well). First level predictions must be in `.npz` format.
 
 Example:
 ```
