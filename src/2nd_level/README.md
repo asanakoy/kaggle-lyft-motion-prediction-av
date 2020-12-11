@@ -1,5 +1,5 @@
 # Transformer second level model
-This model is based on [Set Transformer](https://arxiv.org/abs/1810.00826)
+This model is based on [Set Transformer](https://arxiv.org/abs/1810.00825)
 
 ## Usage
 ### 1. Define data paths
