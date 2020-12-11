@@ -12,7 +12,7 @@
 
 1. Install dependencies. 
   - 'pip install -r requirements.txt'
-  - Patch l5kit with [l5kit.patch](l5kit.patch)
+  - Patch l5kit with [l5kit.patch](l5kit.patch) (disable processing of rasterized images to allow rasterizer to return multiple results).
 
 2. Prepare data.
 ```
