@@ -1,0 +1,13 @@
+diff --git a/l5kit/l5kit/dataset/ego.py b/l5kit/l5kit/dataset/ego.py
+index c5f3b44..46c1980 100644
+--- a/l5kit/l5kit/dataset/ego.py
++++ b/l5kit/l5kit/dataset/ego.py
+@@ -130,7 +130,7 @@ None if not desired
+         image = data["image"]
+         if image is not None:
+             # 0,1,C -> C,0,1
+-            result["image"] = image.transpose(2, 0, 1)
++            result["image"] = image  # .transpose(2, 0, 1)
+ 
+         return result
+ 
