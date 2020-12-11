@@ -1,0 +1,90 @@
+# Config format schema number
+format_version: 4
+
+###################
+## Model options
+model_params:
+  model_type: regression_multi_mode
+  model: "LyftMultiModelWeightedPool"
+  model_architecture: "xception41"
+  target_space: "image"
+
+  history_num_frames: 8
+  history_step_size: 1
+  history_delta_time: 0.1
+  history_box_frames: [0, 1, 2, 4, 8]
+
+  future_num_frames: 50
+  future_step_size: 1
+  future_delta_time: 0.1
+
+  exclude_agents: false
+  add_agent_state: false
+  add_agent_state_size: 0
+  use_only_semantic_map: false
+  nb_raster_channels: 13
+
+###################
+## Input raster parameters
+raster_params:
+  # raster image size [pixels]
+  raster_size:
+    - 224
+    - 224
+  # raster's spatial resolution [meters per pixel]: the size in the real world one pixel corresponds to.
+  pixel_size:
+    - 0.5
+    - 0.5
+  # From 0 to 1 per axis, [0.5,0.5] would show the ego centered in the image.
+  ego_center:
+    - 0.25
+    - 0.5
+  map_type: "box_semantic_fast"
+
+  # the keys are relative to the dataset environment variable
+  satellite_map_key: "aerial_map/aerial_map.png"
+  semantic_map_key: "semantic_map/semantic_map.pb"
+  dataset_meta_key: "meta.json"
+
+  # e.g. 0.0 include every obstacle, 0.5 show those obstacles with >0.5 probability of being
+  # one of the classes we care about (cars, bikes, peds, etc.), >=1.0 filter all other agents.
+  filter_agents_threshold: 0.5
+
+  # whether to completely disable traffic light faces in the semantic rasterizer
+  disable_traffic_light_faces: False
+
+  pre_render_cache_dir: "pre_render_h01248_XXL"
+
+###################
+## Data loader options
+train_data_loader:
+  key: "scenes/train_XXL.zarr"
+  batch_size: 128
+  shuffle: True
+  num_workers: 16
+
+val_data_loader:
+  key: "scenes/validate_uncompressed.zarr"
+  batch_size: 128
+  shuffle: False
+  num_workers: 16
+
+test_data_loader:
+  key: "scenes/test.zarr"
+  batch_size: 64
+  shuffle: False
+  num_workers: 16
+
+###################
+## Train params
+train_params:
+  nb_epochs: 600
+  epoch_size: 200000
+  val_epoch_size: 50000
+  optimizer: sgd
+  scheduler: CosineAnnealingWarmRestarts
+  scheduler_period: 16
+  scheduler_t_mult: 1.41421
+  optimiser_milestones: [24, 48, 56, 60]
+  initial_lr: 1e-2
+  save_period: 2
