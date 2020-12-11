@@ -2,7 +2,7 @@
 
 ### Team behind this solution:
 1. Artsiom Sanakoyeu [[homepage](https://gdude.de)] [[linkedin](TODO)]
-2. Dmytro Poplavskiy
+2. Dmytro Poplavskiy [[Kaggle]](https://www.kaggle.com/dmytropoplavskiy) [[LinkedIn]](https://www.linkedin.com/in/dmytropoplavskiy/)
 3. Artsem Zhyvalkouski [[Kaggle]](https://www.kaggle.com/aruchomu) [[Twitter]](https://twitter.com/artem_aruchomu) [[GitHub]](https://github.com/heartkilla) [[LinkedIn]](https://www.linkedin.com/in/zhyvalkouski/)
 
 ## How to replicate results
