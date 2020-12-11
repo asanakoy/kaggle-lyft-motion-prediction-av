@@ -7,8 +7,18 @@
 
 ## How to replicate results
 1. Prepare data.
+```
+bash prepare_data_train.sh
+```
 2. Train 1st level models.
+```
+bash train.sh
+```
 3. Run inference of 1st level models on the test set.
+```
+bash prepare_data_test.sh
+bash predict_test_l1.sh
+```
 4. Train 2nd level model on the predicts of the 1st level models on the test set.
 ```
 python src/2nd_level/train.py
