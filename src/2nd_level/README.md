@@ -21,7 +21,7 @@ INFER_SAVE_PATH = './'
 ```
 
 ### 2. Training
-We provide our pretrained final model in this repository -- `transformer.bin`. It scores XX at Public LB and XX at Private LB.
+We provide our pretrained final model in this repository -- `transformer.bin`. It scores 10.227 at Public LB and 9.404 at Private LB.
 
 If you want to retrain the model from scratch, run `python train.py`.   
 The model will be saved in `MODEL_PATH` as `transformer.bin`.

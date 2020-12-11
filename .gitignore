@@ -17,4 +17,5 @@ log/
 # vs code files
 ._* 
 
+input
 src/2nd_level/submission.csv

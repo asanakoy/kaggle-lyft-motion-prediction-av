@@ -280,7 +280,6 @@ def pre_render_parallel(dset_name, scene_step, zarr_name, skip_frame_step, initi
     print(f"Generated all npz paths and saved to {all_files_fn}")
 
 
-# pre_render_scenes(initial_scene=0, scene_step=1, zarr_name='sample_uncompressed', skip_frame_step=1, dset_name='train')
 
 
 if __name__ == "__main__":
@@ -303,8 +302,8 @@ if __name__ == "__main__":
 
     zarr_names = {
         "train_XXL": "train_XXL",
-        "train": "train_uncompressed",
-        "val": "validate_uncompressed",
+        "train": "train",
+        "val": "validate",
         "test": "test",
     }
     zarr_name = zarr_names[dset_name] if args.zarr_name is None else args.zarr_name
