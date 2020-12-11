@@ -6,15 +6,15 @@
 3. Artsem Zhyvalkouski [[Kaggle]](https://www.kaggle.com/aruchomu) [[Twitter]](https://twitter.com/artem_aruchomu) [[GitHub]](https://github.com/heartkilla) [[LinkedIn]](https://www.linkedin.com/in/zhyvalkouski/)
 
 ## How to reproduce results
-0. Set the paths in the configs:
+0. [Optional] Set the paths in the configs. But the default paths should work as well.
   - Set path where to store prerendered dataset in [src/1st_level/config.py](src/1st_level/config.py)
-  - [Optional] Set path where the predicts of the 1st level models are saved in [src/2nd_level/config.py](src/2nd_level/config.py)
+  - Set path where the predicts of the 1st level models are saved in [src/2nd_level/config.py](src/2nd_level/config.py)
 
 1. Install dependencies. 
   - 'pip install -r requirements.txt'
   - Patch l5kit with [l5kit.patch](l5kit.patch) (disable processing of rasterized images to allow rasterizer to return multiple results).
 
-2. Prepare data.
+2. Download and prepare data.
 ```
 bash prepare_data_train.sh
 ```
@@ -38,7 +38,10 @@ Make sure you've set all paths right in `2nd_level/config.py` w.r.t. the `2nd_le
 cd src/2nd_level && python infer.py
 ```
 
-The file witn final predictions will be saved to `src/2nd_level/submission.csv'.
+The file witn final predictions will be saved to `src/2nd_level/submission.csv'.  
+
+Directory structure example (i.e., how it should look like after everything is trained and predicted) is in [directory_structure.txt](directory_structure.txt).
+
 
 ## Extra
 - To skip training the 1st level models, you can download the pretrained weights by running `bash download_1st_level_weights.sh`.
