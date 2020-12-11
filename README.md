@@ -1,11 +1,15 @@
 # The 3rd place solution for competition "Lyft Motion Prediction for Autonomous Vehicles" at Kaggle
 
 ### Team behind this solution:
-1. Artsiom Sanakoyeu [[homepage](https://gdude.de)] [[linkedin](TODO)]
+1. Artsiom Sanakoyeu [[Homepage](https://gdude.de)] [[Twitter](https://twitter.com/artsiom_s)] [[Telegram Channel](https://t.me/gradientdude)] [[LinkedIn](https://www.linkedin.com/in/sanakoev)]
 2. Dmytro Poplavskiy [[Kaggle]](https://www.kaggle.com/dmytropoplavskiy) [[LinkedIn]](https://www.linkedin.com/in/dmytropoplavskiy/)
 3. Artsem Zhyvalkouski [[Kaggle]](https://www.kaggle.com/aruchomu) [[Twitter]](https://twitter.com/artem_aruchomu) [[GitHub]](https://github.com/heartkilla) [[LinkedIn]](https://www.linkedin.com/in/zhyvalkouski/)
 
-## How to replicate results
+## How to reproduce results
+0. Set the paths in the configs:
+  - Set path where to store prerendered dataset in [src/1st_level/config.py](src/1st_level/config.py)
+  - Set path where the predits of the 1st level models are saved in [src/2nd_level/config.py](src/2nd_level/config.py)
+
 1. Prepare data.
 ```
 bash prepare_data_train.sh
@@ -29,3 +33,6 @@ Make sure you've set all paths right in `2nd_level/config.py` w.r.t. the `2nd_le
 ```
 python src/2nd_level/infer.py
 ```
+
+## Extra
+More details on how to use 2nd level model are in [src/2nd_level/README.md](src/2nd_level/README.md)
