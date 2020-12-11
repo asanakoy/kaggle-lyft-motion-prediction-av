@@ -51,9 +51,9 @@ def train(rank, experiment_name, world_size, continue_epoch, dist_url):
     model_type = cfg["model_params"]["model_type"]
     train_params = DotDict(cfg["train_params"])
 
-    checkpoints_dir = f"../../checkpoints/{model_str}"
-    tensorboard_dir = f"../../tensorboard/{model_type}/{model_str}"
-    oof_dir = f"../../oof/{model_str}"
+    checkpoints_dir = f"./checkpoints/{model_str}"
+    tensorboard_dir = f"./tensorboard/{model_type}/{model_str}"
+    oof_dir = f"./oof/{model_str}"
     os.makedirs(checkpoints_dir, exist_ok=True)
     os.makedirs(tensorboard_dir, exist_ok=True)
     os.makedirs(oof_dir, exist_ok=True)
@@ -246,7 +246,7 @@ def prepare_submission(rank, experiment_name, epoch, stage, dist_url, world_size
     cfg = load_config_data(experiment_name)
     pprint.pprint(cfg)
 
-    checkpoints_dir = f"../../checkpoints/{model_str}"
+    checkpoints_dir = f"./checkpoints/{model_str}"
     print("\n", experiment_name, "\n")
 
     model_info = DotDict(cfg["model_params"])

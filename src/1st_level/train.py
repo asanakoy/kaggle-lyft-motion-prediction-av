@@ -31,9 +31,9 @@ def train(experiment_name, distributed=False, continue_epoch=-1):
     model_type = cfg["model_params"]["model_type"]
     train_params = DotDict(cfg["train_params"])
 
-    checkpoints_dir = f"../../checkpoints/{model_str}"
-    tensorboard_dir = f"../../tensorboard/{model_type}/{model_str}"
-    oof_dir = f"../../oof/{model_str}"
+    checkpoints_dir = f"./checkpoints/{model_str}"
+    tensorboard_dir = f"./tensorboard/{model_type}/{model_str}"
+    oof_dir = f"./oof/{model_str}"
     os.makedirs(checkpoints_dir, exist_ok=True)
     os.makedirs(tensorboard_dir, exist_ok=True)
     os.makedirs(oof_dir, exist_ok=True)

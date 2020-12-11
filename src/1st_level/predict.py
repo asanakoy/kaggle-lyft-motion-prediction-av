@@ -21,7 +21,7 @@ def prepare_submission(experiment_name, epoch, stage):
     cfg = load_config_data(experiment_name)
     pprint.pprint(cfg)
 
-    checkpoints_dir = f"../../checkpoints/{model_str}"
+    checkpoints_dir = f"./checkpoints/{model_str}"
     print("\n", experiment_name, "\n")
 
     model_info = DotDict(cfg["model_params"])
