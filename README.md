@@ -25,14 +25,20 @@ bash predict_test_l1.sh
 ```
 4. Train 2nd level model on the predicts of the 1st level models on the test set.
 ```
-python src/2nd_level/train.py
+cd src/2nd_level && python train.py
 ```
 Make sure you've set all paths right in `2nd_level/config.py` w.r.t. the `2nd_level` directory.
 
 5. Predict on the test set using the 2nd level model.
 ```
-python src/2nd_level/infer.py
+cd src/2nd_level && python infer.py
 ```
 
+The file witn final predictions will be saved to `src/2nd_level/submission.csv'.
+
 ## Extra
-More details on how to use 2nd level model are in [src/2nd_level/README.md](src/2nd_level/README.md)
+- To skip training the 1st level models, you can download the pretrained weights by running `bash download_1st_level_weights.sh`.
+- To skip training and inference of the 1st level models, you can download all predicts. More details on this are in [src/1st_level/submissions](src/1st_level/submissions).
+- More details on how to use 2nd level model are in [src/2nd_level](src/2nd_level).
+- Our final 2nd level model with *XX Private LB score* is already committed in this repository ([src/2nd_level/transformer.bin](src/2nd_level/transformer.bin)). To run inference using this model you can directly execute `cd src/2nd_level && python infer.py`.
+
