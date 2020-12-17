@@ -1,0 +1,1 @@
+All code is licensed under the [CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license and is owned by the respective copyright holders (Artsiom Sanakoyeu, Dmytro Poplavskiy, Artsem Zhyvalkouski).
