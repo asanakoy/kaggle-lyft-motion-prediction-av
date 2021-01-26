@@ -1,5 +1,7 @@
 # The 3rd place solution for competition "Lyft Motion Prediction for Autonomous Vehicles" at Kaggle
 
+![header](img/header.png)
+
 ### Team behind this solution:
 1. Artsiom Sanakoyeu [[Homepage](https://gdude.de)] [[Twitter](https://twitter.com/artsiom_s)] [[Telegram Channel](https://t.me/gradientdude)] [[LinkedIn](https://www.linkedin.com/in/sanakoev)]
 2. Dmytro Poplavskiy [[Kaggle]](https://www.kaggle.com/dmytropoplavskiy) [[LinkedIn]](https://www.linkedin.com/in/dmytropoplavskiy/)
