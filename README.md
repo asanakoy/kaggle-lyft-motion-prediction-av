@@ -7,6 +7,10 @@
 2. Dmytro Poplavskiy [[Kaggle]](https://www.kaggle.com/dmytropoplavskiy) [[LinkedIn]](https://www.linkedin.com/in/dmytropoplavskiy/)
 3. Artsem Zhyvalkouski [[Kaggle]](https://www.kaggle.com/aruchomu) [[Twitter]](https://twitter.com/artem_aruchomu) [[GitHub]](https://github.com/heartkilla) [[LinkedIn]](https://www.linkedin.com/in/zhyvalkouski/)
 
+### Explanation of the solution:
+▶️ Video: https://youtu.be/3Yz8_x38qbc  
+📝 Writeup: https://www.kaggle.com/c/lyft-motion-prediction-autonomous-vehicles/discussion/205376
+
 ## How to reproduce results
 0. [Optional] Set the paths in the configs. But the default paths should work as well.
   - Set path where to store prerendered dataset in [src/1st_level/config.py](src/1st_level/config.py)
