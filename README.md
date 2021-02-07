@@ -8,8 +8,9 @@
 3. Artsem Zhyvalkouski [[Kaggle]](https://www.kaggle.com/aruchomu) [[Twitter]](https://twitter.com/artem_aruchomu) [[GitHub]](https://github.com/heartkilla) [[LinkedIn]](https://www.linkedin.com/in/zhyvalkouski/)
 
 ### Explanation of the solution:
-▶️ Video: https://youtu.be/3Yz8_x38qbc  
-📝 Writeup: https://www.kaggle.com/c/lyft-motion-prediction-autonomous-vehicles/discussion/205376
+▶️  Video: https://youtu.be/3Yz8_x38qbc  
+📜 Blogpost: https://gdude.de/blog/2021-02-05/Kaggle-Lyft-solution 
+📝 Brief solution writeup: https://www.kaggle.com/c/lyft-motion-prediction-autonomous-vehicles/discussion/205376
 
 ## How to reproduce results
 0. [Optional] Set the paths in the configs. But the default paths should work as well.
